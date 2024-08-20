@@ -1,0 +1,248 @@
+
+
+
+/*Sí, es posible implementar BEM en un solo archivo CSS antes de modularizarlo en partes separadas. 
+Vamos a reestructurar tu archivo `styles.css` para seguir las convenciones de BEM. 
+Aquí tienes una versión actualizada:*/
+
+/*```css*/
+
+/* Base */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-item {
+  margin-left: 1rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header__nav-item:hover {
+  color: #CCCCCC;
+}
+
+.header__mobile-menu-btn {
+  font-size: 2rem;
+}
+
+.header__mobile-menu {
+  display: none;
+}
+
+
+/* Services Section */
+.services {
+  padding: 2rem;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services__icon {
+  font-size: 4rem;
+  color: #1E3A8A;
+}
+
+.services__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.services__description {
+  margin-top: 1rem;
+}
+
+/* Pricing Section */
+.pricing {
+  background-color: #F3F4F6;
+  padding: 2rem;
+}
+
+.pricing__item {
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pricing__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pricing__list {
+  margin-bottom: 1rem;
+}
+
+.pricing__list-item {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.pricing__button {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing__button:hover {
+  background-color: #2E4A9E;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+}
+
+.testimonials__item {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials__quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonials__author {
+  font-weight: bold;
+}
+
+/* Process Section */
+.process {
+  padding: 2rem;
+}
+
+.process__item {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.process__icon {
+  font-size: 4rem;
+  color: #1E3A8A;
+}
+
+.process__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.process__description {
+  margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem;
+}
+
+.contact__form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact__textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #CCCCCC;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact__button {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+  background-color: #2E4A9E;
+}
+
+/* Footer */
+.footer {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer__nav {
+  margin-top: 1rem;
+}
+
+.footer__nav-item {
+  margin: 0 0.5rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer__nav-item:hover {
+  color: #CCCCCC;
+}
+
+
+/*```Este archivo CSS ahora sigue una estructura BEM más organizada y modular, utilizando clases 
+que siguen el patrón `block__element--modifier`. Esto te facilitará la futura modularización 
+del código en archivos individuales para cada sección de tu página web.
+
+
+
+que hablen de cual ha sido el caballo que más les ha ganado carreras
+o que se ha aproximado a ganar, la historia de ese caballo, como lo obtuvieron, qué alimentos le ofrecen, 
+ entre otras cosas que se me iran ocurriendo. Premio 4000 BHRT en líquidos y otros 4k en cofres

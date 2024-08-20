@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tu Empresa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Importar header -->
+    <header>
+        <!-- Puedes importar el contenido del header desde header.html o templates/header.html -->
+        <!-- Ejemplo: -->
+        <!-- <?php include_once "templates/header.html"; ?> -->
+        <!-- O simplemente replicar el contenido aquí -->
+        <header class="bg-blue-900 text-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-lg font-bold">Tu Empresa</h1>
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#servicios" class="hover:text-gray-300">Servicios</a>
+                    <a href="#precios" class="hover:text-gray-300">Precios</a>
+                    <a href="#contacto" class="hover:text-gray-300">Contacto</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    &#9776;
+                </button>
+            </div>
+            <nav id="nav-menu" class="hidden md:hidden">
+                <a href="#servicios" class="block py-2">Servicios</a>
+                <a href="#precios" class="block py-2">Precios</a>
+                <a href="#contacto" class="block py-2">Contacto</a>
+            </nav>
+        </header>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="p-8">
+        <h3 class="text-2xl font-bold text-center mb-6" data-aos="fade-up">Contáctanos</h3>
+        <div class="container mx-auto">
+            <form class="max-w-xl mx-auto" data-aos="fade-up">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Nombre</label>
+                    <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded-md contact-input" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded-md contact-input" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Mensaje</label>
+                    <textarea id="message" class="w-full p-2 border border-gray-300 rounded-md contact-input" required></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-3 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-300">Enviar</button>
+            </form>
+            <div class="mt-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                <p>Email: contacto@tuempresa.com</p>
+                <p>Teléfono: +123 456 7890</p>
+                <div class="mt-4">
+                    <a href="#" class="text-blue-900 mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-blue-900 mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-blue-900 mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importar footer -->
+    <footer>
+        <!-- Puedes importar el contenido del footer desde footer.html o templates/footer.html -->
+        <!-- Ejemplo: -->
+        <!-- <?php include_once "templates/footer.html"; ?> -->
+        <!-- O simplemente replicar el contenido aquí -->
+        <footer class="bg-blue-900 text-white p-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+                <nav class="mt-4">
+                    <a href="#" class="hover:text-gray-300 mx-2">Términos y Condiciones</a>
+                    <a href="#" class="hover:text-gray-300 mx-2">Política de Privacidad</a>
+                </nav>
+            </div>
+        </footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

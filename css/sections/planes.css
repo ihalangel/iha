@@ -1,0 +1,74 @@
+/* Pricing Section */
+.pricing {
+  background-color: #F3F4F6;
+  padding: 2rem;
+}
+
+.pricing__item {
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative; /* Ensure the item is positioned relative to position the image */
+}
+
+.pricing__image {
+  width: 40%;
+  height: 50vh;
+  object-fit: cover;
+  position: absolute;
+  bottom: -20px; /* Adjust these values as needed */
+  right:  -20px; /* Adjust these values as needed */
+  z-index: 10; /* Ensure the image appears above other content */
+   transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+.pricing__image_central {
+  width: 40%;
+  /*height: 50vh;*/
+  object-fit: cover;
+  position: static;
+  bottom: -0px; /* Adjust these values as needed */
+  right:  -20px; /* Adjust these values as needed */
+  z-index: -1; /* Ensure the image appears above other content */
+   transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+.pricing__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pricing__list {
+  margin-bottom: 1rem;
+  list-style: none; /* Remove default list style */
+  padding-left: 0;
+}
+
+.pricing__list-item {
+  position: relative;
+  padding-left: 1.5rem; /* Space for the check icon */
+  margin-bottom: 0.5rem;
+}
+
+.pricing__list-item::before {
+  content: '✅'; /* Check mark emoji */
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+.pricing__button {
+  background-color: #1E3A8A;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing__button:hover {
+  background-color: #2E4A9E;
+}
